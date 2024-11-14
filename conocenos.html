@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="imagenesCafe/logito.jpg" alt="logo">
+            </div>
+
+            <!-- Botón de menú burger para dispositivos móviles -->
+            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+
+            <!-- Menú de navegación -->
+            <ul class="menu-h navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="menu-v">
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="malteadas.html">Malteadas</a></li>
+                        <li><a href="pastel.html">Pasteles</a></li>
+                        <li><a href="tartas.html">Tartas</a></li>
+                        <li><a href="cheesecakes.html">Cheesecakes</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="fondo">
+            <img src="imagenesCafe/fondoCafe.jpg" alt="cafeteria">
+        </div>
+
+        <div class="info">
+            <h1>Nuestra historia</h1>
+            <p>Nuestro cafe tiene mas de 50 años de existencia es un negocio familiar que ha pasado de generacion en
+                generación, con el fin de siempre mantener la tradición familiar de seguir con el café que un día
+                fue creado por el abuelo y en honor a él, el café dará servicio a la población en general por muchos
+                años más.
+            <br>
+            <br>
+                La Cafe el buen sabor tiene una gran valoracion por sus postres que son la cereza de nuesto negocio somos especalista en la elaboracion de pasteles, tartas y sobte todo en los cheesecakes.
+                Siempre estaremos agradecidos con todo el pueblo hondureño pero en especal a las personas de Tegucigalpa por siempre preferir la cafe el buen sabor
+            </p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.menu-h');
+            navbar.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+
+</html>

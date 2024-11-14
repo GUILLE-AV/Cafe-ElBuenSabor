@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="imagenesCafe/logito.jpg" alt="logo">
+            </div>
+
+            <!-- Botón de menú burger para dispositivos móviles -->
+            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+
+            <!-- Menú de navegación -->
+            <ul class="menu-h navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="menu-v">
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="malteadas.html">Malteadas</a></li>
+                        <li><a href="pastel.html">Pasteles</a></li>
+                        <li><a href="tartas.html">Tartas</a></li>
+                        <li><a href="cheesecakes.html">Cheesecakes</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fondo">
+            <img src="imagenesCafe/fondoCafe.jpg" alt="cafetería">
+        </div>
+
+        <div class="caja">
+            <div class="tarjeta">
+                <img src="imagenesCafe/cafeAmericano.jpg" alt="Imagen de Café americano">
+                <div class="intro">
+                    <h1>Café americano</h1>
+                    <p>Contamos con el mejor café americano.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/cafeCapuchino.jpg" alt="Imagen de Café capuchino">
+                <div class="intro">
+                    <h1>Café capuchino</h1>
+                    <p>Contamos con el mejor café capuchino.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/cafeEspresso.jpg" alt="Imagen de Café espresso">
+                <div class="intro">
+                    <h1>Café espresso</h1>
+                    <p>Contamos con el mejor café espresso.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.menu-h');
+            navbar.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+
+</html>

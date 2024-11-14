@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malteadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="imagenesCafe/logito.jpg" alt="logo">
+            </div>
+
+            <!-- Botón de menú burger para dispositivos móviles -->
+            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+
+            <!-- Menú de navegación -->
+            <ul class="menu-h navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="menu-v">
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="malteadas.html">Malteadas</a></li>
+                        <li><a href="pastel.html">Pasteles</a></li>
+                        <li><a href="tartas.html">Tartas</a></li>
+                        <li><a href="cheesecakes.html">Cheesecakes</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fondo">
+            <img src="imagenesCafe/fondoCafe.jpg" alt="cafetería">
+        </div>
+
+        <div class="caja">
+            <div class="tarjeta">
+                <img src="imagenesCafe/MalteadaChocolate.jpg" alt="Imagen de malteada de chocolate">
+                <div class="intro">
+                    <h1>Malteada de chocolate</h1>
+                    <p>Prueba nuestra malteada de chocolate.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/MalteadaFresa.jpg" alt="Imagen de malteada de fresa">
+                <div class="intro">
+                    <h1>Malteada de fresa</h1>
+                    <p>Prueba nuestra malteada de fresa.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/MalteadaVainilla.jpg" alt="Imagen de malteada de vainilla">
+                <div class="intro">
+                    <h1>Malteada de vainilla</h1>
+                    <p>Prueba nuestra malteada de vainilla.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.menu-h');
+            navbar.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+
+</html>

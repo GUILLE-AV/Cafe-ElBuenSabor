@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tartas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="imagenesCafe/logito.jpg" alt="logo">
+            </div>
+
+            <!-- Botón de menú burger para dispositivos móviles -->
+            <button class="burger-menu" onclick="toggleMenu()">&#9776;</button>
+
+            <!-- Menú de navegación -->
+            <ul class="menu-h navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conócenos</a></li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="menu-v">
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="malteadas.html">Malteadas</a></li>
+                        <li><a href="pastel.html">Pasteles</a></li>
+                        <li><a href="tartas.html">Tartas</a></li>
+                        <li><a href="cheesecakes.html">Cheesecakes</a></li>
+                        <li><a href="otros.html">Otros</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="fondo">
+            <img src="imagenesCafe/fondoCafe.jpg" alt="cafetería">
+        </div>
+
+        <div class="caja">
+            <div class="tarjeta">
+                <img src="imagenesCafe/tartaMassini.jpg" alt="Imagen de tarta de massini">
+                <div class="intro">
+                    <h1>Tarta de massini</h1>
+                    <p>Disfruta nuestra tarta de massini.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/tartaRicota.jpg" alt="Imagen de tarta de ricota">
+                <div class="intro">
+                    <h1>Tarta de ricota</h1>
+                    <p>Disfruta nuestra tarta de ricota.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <img src="imagenesCafe/tartaZanahoria.jpg" alt="Imagen de tarta de zanahoria">
+                <div class="intro">
+                    <h1>Tarta de zanahoria</h1>
+                    <p>Disfruta nuestra tarta de zanahoria.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.menu-h');
+            navbar.classList.toggle('show-menu');
+        }
+    </script>
+    
+</body>
+
+</html>
